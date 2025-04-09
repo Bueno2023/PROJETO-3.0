@@ -1,0 +1,475 @@
+/* Define altura total para html e body e aplica uma cor de fundo */
+.html,
+body {
+  height: 100%;
+  background-color: #2e4328 !important;
+  /* Cor de fundo verde escuro */
+}
+
+/* Define variáveis de cores para reutilização */
+:root {
+  --color-primary: #2e4328;
+  /* Cor primária: verde escuro */
+  --color-secondary: #ffbd59;
+  /* Cor secundária: amarelo */
+  --color-tertiary: #ffffff;
+  /* Cor terciária: branco */
+  --color-quaternary: #42573b;
+  /* Cor quaternária: verde médio */
+  --color-quinary: #231f1f;
+  /* Cor quinary: preto acinzentado */
+}
+
+/* Estiliza o cabeçalho com uma imagem de fundo */
+.header {
+  background-image: url(../img/Banner.jpg);
+  /* Caminho da imagem de fundo */
+  background-size: cover;
+  /* Faz a imagem cobrir todo o espaço */
+  background-position: center;
+  /* Centraliza a imagem */
+  border-radius: 10px;
+  /* Arredonda os cantos */
+}
+
+/* Estiliza o logo principal */
+.logo-principal {
+  height: 140px;
+  /* Altura do logo */
+  width: 190px;
+  /* Largura do logo */
+}
+
+/* Estiliza o texto do banner */
+.text-banner {
+  display: grid;
+  /* Usa grid layout */
+  justify-content: space-around;
+  /* Espaçamento uniforme */
+  font-size: 10rem;
+  /* Tamanho da fonte muito grande */
+  margin-top: 20px;
+  /* Margem superior */
+  font-family: 'roboto', sans-serif;
+  /* Fonte Roboto */
+}
+
+/* Estiliza textos com classe style-text */
+.style-text {
+  display: flex;
+  /* Usa flexbox */
+  justify-content: space-around;
+  /* Espaçamento uniforme */
+  font-family: 'roboto';
+  /* Fonte Roboto */
+  color: var(--color-primary);
+  /* Cor primária */
+}
+
+/* Estiliza textos com sombra */
+.style-text-se {
+  text-shadow: 3px 3px 5px var(--color-quaternary);
+  /* Sombra no texto */
+  font-family: 'roboto';
+  /* Fonte Roboto */
+  color: var(--color-secondary);
+  /* Cor secundária */
+}
+
+/* Estiliza o container de botões no banner */
+.buttons-banner {
+  display: flex;
+  /* Usa flexbox */
+  justify-content: center;
+  /* Centraliza os botões */
+  gap: 20px;
+  /* Espaçamento entre os botões */
+}
+
+/* Estiliza os botões do banner */
+.btn-banner {
+  background-color: var(--color-secondary);
+  /* Cor de fundo amarelo */
+  border: none;
+  /* Remove bordas */
+  border-radius: 15px;
+  /* Bordas arredondadas */
+  color: var(--color-primary);
+  /* Cor do texto verde escuro */
+  font-size: 20px;
+  /* Tamanho da fonte */
+  padding: 10px 20px;
+  /* Espaçamento interno */
+}
+
+/* Estiliza os botões ao passar o mouse */
+.btn-banner:hover {
+  background-color: var(--color-quinary);
+  /* Cor de fundo preto acinzentado */
+  color: var(--color-secondary);
+  /* Cor do texto amarelo */
+  transition: all 0.3s ease-in-out;
+  /* Transição suave */
+}
+
+/* Estiliza o texto secundário do banner */
+.text-banner-2 {
+  display: flex;
+  /* Usa flexbox */
+  justify-content: center;
+  /* Centraliza o texto */
+  font-size: 20px;
+  /* Tamanho da fonte */
+  margin-top: 20px;
+  /* Margem superior */
+  font-family: 'roboto';
+  /* Fonte Roboto */
+  color: var(--color-quaternary);
+  /* Cor quaternária */
+}
+
+/*Main*/
+/* Estiliza o container principal */
+.container {
+  display: flex;
+  padding: 90px;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.sub-title {
+  font-size: 7rem;
+  /* Tamanho da fonte */
+  color: var(--color-quaternary);
+  /* Cor quaternária */
+  font-family: 'roboto';
+  /* Fonte Roboto */
+}
+
+.image {
+  height: 450px;
+  width: 600px;
+  /* Largura da imagem */
+}
+
+/* Planos */
+.plans {
+  background-color: var(--color-quaternary);
+  border-radius: 10px;
+  /* Bordas arredondadas */
+  box-shadow: black 0px 0px 10px;
+  /* Sombra branca */
+}
+
+.img-setas {
+  position: relative;
+  z-index: 1000;
+  /* Coloca a imagem acima de outros elementos */
+  height: 200px;
+  /* Altura da imagem */
+  width: 300px;
+  /* Largura da imagem */
+}
+
+.container-text {
+  padding: 10px;
+}
+
+.container-plans {
+  border: 2px solid;
+  /* Borda preta acinzentada */
+  border-radius: 10px;
+  border-color: var(--color-secondary);
+  /* Bordas arredondadas */
+  height: 600px;
+  /* Altura do container */
+  width: 300px;
+}
+
+.title-plans {
+  display: flex;
+  /* Usa flexbox */
+  justify-content: center;
+  /* Centraliza o texto */
+  font-size: 2rem;
+  font-family: 'roboto';
+  /* Fonte Roboto */
+  color: var(--color-primary);
+  /* Cor quaternária */
+}
+
+.title-01 {
+  display: flex;
+  /* Usa flexbox */
+  justify-content: center;
+  /* Centraliza o texto */
+  font-size: 1rem;
+  /* Tamanho da fonte */
+  font-family: 'roboto';
+  /* Fonte Roboto */
+  color: var(--color-secondary);
+  /* Cor quaternária */
+
+}
+
+.title-02 {
+  display: flex;
+  /* Usa flexbox */
+  align-items: center;
+  /* Centraliza verticalmente */
+  font-size: 2rem;
+  /* Tamanho da fonte */
+  margin-top: 20px;
+  /* Margem superior */
+  font-family: 'roboto';
+  /* Fonte Roboto */
+  color: var(--color-secondary);
+  /* Cor quaternária */
+  gap: 5px;
+}
+
+.title-03 {
+  font-size: 15px;
+  /* Tamanho da fonte */
+  font-family: 'roboto';
+  /* Fonte Roboto */
+  color: var(--color-quinary);
+  /* Cor quaternária */
+}
+
+.title-value {
+  font-size: 5rem;
+  color: var(--color-tertiary);
+  /* Cor terciária */
+}
+
+.title-off {
+  font-size: 1rem;
+  /* Tamanho da fonte */
+  font-family: 'roboto';
+  /* Fonte Roboto */
+  color: var(--color-secondary);
+  /* Cor quaternária */
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.valor {
+  text-decoration: line-through;
+}
+
+.btn-plans-container {
+  display: flex;
+  /* Usa flexbox */
+  justify-content: center;
+  /* Centraliza os botões */
+  gap: 20px;
+  /* Espaçamento entre os botões */
+  margin-bottom: 20px;
+  /* Margem inferior */
+}
+
+.btn-plans {
+  background-color: var(--color-secondary);
+  /* Cor de fundo amarelo */
+  border: none;
+  /* Remove bordas */
+  border-radius: 15px;
+  /* Bordas arredondadas */
+  color: var(--color-primary);
+  /* Cor do texto verde escuro */
+  font-size: 20px;
+  /* Tamanho da fonte */
+  padding: 10px 20px;
+  /* Espaçamento interno */
+}
+
+
+.img-check {
+  background-color: #ffbd59;
+  border-radius: 100px;
+}
+
+.sub-title-plans {
+  display: flex;
+  /* Usa flexbox */
+  font-size: 1rem;
+  /* Tamanho da fonte */
+  margin-top: 20px;
+  /* Margem superior */
+  font-family: 'roboto';
+  /* Fonte Roboto */
+  color: var(--color-tertiary);
+  /* Cor quaternária */
+  gap: 5px;
+}
+
+
+.conect {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.container-conect {
+  display: flex;
+  /* Usa flexbox */
+  justify-content: center;
+  /* Centraliza o texto */
+  align-items: center;
+  /* Centraliza verticalmente */
+  gap: 20px;
+  /* Espaçamento entre os elementos */
+}
+
+.container-1 {
+  width: 100px;
+  /* Define a largura do círculo */
+  height: 100px;
+  /* Define a altura do círculo (igual à largura para ser perfeito) */
+  border: #ffffff 1px solid;
+  background-color: var(--color-tertiary);
+  border-radius: 50%;
+  /* Bordas arredondadas */
+  display: flex;
+  justify-content: center;
+  /* Centraliza o conteúdo horizontalmente */
+  align-items: center;
+  /* Centraliza o conteúdo verticalmente */
+}
+
+.container-2 {
+  width: 120px;
+  /* Define a largura do círculo */
+  height: 120px;
+  /* Define a altura do círculo (igual à largura para ser perfeito) */
+  border: #ffffff 1px solid;
+  background-color: var(--color-tertiary);
+  border-radius: 50%;
+  /* Bordas arredondadas */
+  display: flex;
+  justify-content: center;
+  /* Centraliza o conteúdo horizontalmente */
+  align-items: center;
+  /* Centraliza o conteúdo verticalmente */
+}
+
+.container-3 {
+  width: 140px;
+  /* Define a largura do círculo */
+  height: 140px;
+  /* Define a altura do círculo (igual à largura para ser perfeito) */
+  border: #ffffff 1px solid;
+  background-color: var(--color-tertiary);
+  border-radius: 50%;
+  /* Bordas arredondadas */
+  display: flex;
+  justify-content: center;
+  /* Centraliza o conteúdo horizontalmente */
+  align-items: center;
+  /* Centraliza o conteúdo verticalmente */
+}
+
+.container-4 {
+  width: 160px;
+  /* Define a largura do círculo */
+  height: 160px;
+  /* Define a altura do círculo (igual à largura para ser perfeito) */
+  border: #ffffff 1px solid;
+  background-color: var(--color-tertiary);
+  border-radius: 50%;
+  /* Bordas arredondadas */
+  display: flex;
+  justify-content: center;
+  /* Centraliza o conteúdo horizontalmente */
+  align-items: center;
+  /* Centraliza o conteúdo verticalmente */
+}
+
+.container-5 {
+  width: 130px;
+  /* Define a largura do círculo */
+  height: 130px;
+  /* Define a altura do círculo (igual à largura para ser perfeito) */
+  border: #ffffff 1px solid;
+  background-color: var(--color-tertiary);
+  border-radius: 50%;
+  /* Bordas arredondadas */
+  display: flex;
+  justify-content: center;
+  /* Centraliza o conteúdo horizontalmente */
+  align-items: center;
+  /* Centraliza o conteúdo verticalmente */
+}
+
+.container-6 {
+  width: 110px;
+  /* Define a largura do círculo */
+  height: 110px;
+  /* Define a altura do círculo (igual à largura para ser perfeito) */
+  border: #ffffff 1px solid;
+  background-color: var(--color-tertiary);
+  border-radius: 50%;
+  /* Bordas arredondadas */
+  display: flex;
+  justify-content: center;
+  /* Centraliza o conteúdo horizontalmente */
+  align-items: center;
+  /* Centraliza o conteúdo verticalmente */
+}
+
+.container-7 {
+  width: 100px;
+  /* Define a largura do círculo */
+  height: 100px;
+  /* Define a altura do círculo (igual à largura para ser perfeito) */
+  border: #ffffff 1px solid;
+  background-color: var(--color-tertiary);
+  border-radius: 50%;
+  /* Bordas arredondadas */
+  display: flex;
+  justify-content: center;
+  /* Centraliza o conteúdo horizontalmente */
+  align-items: center;
+  /* Centraliza o conteúdo verticalmente */
+}
+
+.logs-mot {
+  height: 60px;
+}
+
+.text-conect {
+  font-size: 100px;
+  /* Tamanho da fonte */
+  font-family: 'roboto';
+  /* Fonte Roboto */
+  color: var(--color-quaternary);
+  /* Cor quaternária */
+  text-align: center;
+  /* Centraliza o texto */
+}
+
+.color-text-conect {
+  color: var(--color-secondary);
+  /* Cor secundária */
+}
+
+.color-text-conect-sub {
+  font-family: 'roboto', sans-serif;
+
+}
+
+.color-text-conect-sub b {
+  color: var(--color-tertiary);
+  /* Cor terciária */
+  font-size: 20px;
+  /* Tamanho da fonte */
+  font-style: 'roboto';
+  /* Fonte Roboto */
+  font-family: 'roboto', sans-serif;
+
+}
